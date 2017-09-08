@@ -1,0 +1,34 @@
+    body{
+        background:blue url('imagenes/fondo.jpg') no-repeat center center;
+        background-size:100% 100%;
+        text-align: center;
+        font-size: 40px;
+        width: 100%;
+        }
+    input{
+        width: 200px;
+        height: 30px;
+
+    }   
+
+    button{
+        width: 200px;
+        height: 30px;
+        color: blue;
+
+    } 
+
+    aside{
+
+        
+        font-size: 40px
+        color: #ccffcc;
+    }
+
+    section{
+        font-size: 30px;
+        text-align:left;
+        text-align: center;
+    }
+
+    

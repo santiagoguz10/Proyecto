@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<head>
+<!-- src source -->
+<script src="js/jquery-3.2.1.min.js"></script>
+	<title>Hoja de Vida</title>
+</head>
+<body>
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Datos Personales</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="referencias.html">Referencias Familiares</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="familia.html">referencias Personales</a>
+  </li>
+  
+</ul>
+
+
+
+
+<center>
+<h1>HOJA DE VIDA</h1>
+<center>
+<img id="mi_imagen" src="images/aspi.jpg" width="200" height="200"><br><br>
+<div class="btn-group" role="group" aria-label="aria-label">
+<button id="btn_img1" class="btn btn-primary">Foto 1</button>
+<button id="btn_img2" class="btn btn-default">Foto 2</button> 
+<button id="btn_big" class="btn btn-danger">Agrandar</button>
+<button id="btn_short" class="btn btn-warning">Disminuir</button>
+
+
+</div>
+
+<script type="text/javascript">
+//apertura de jquery
+$(function(){
+
+$("#btn_img1").on("click", function(){
+	$("#mi_imagen").attr("src", "images/aspi.jpg");	
+});
+
+
+$("#btn_img2").click(function(){
+	$("#mi_imagen").prop("src", "images/imagen2.jpg");	
+});
+
+
+$("#btn_big").on("mouseover", function(){
+	$("#mi_imagen").width(500);
+	$("#mi_imagen").height(500);	
+});
+
+
+$("#btn_short").mouseover(function(){
+	$("#mi_imagen").width(200).height(200);
+});
+
+
+
+
+});
+
+</script>
+<br><br>
+
+
+<h3><strong>Informacion Personal</strong></h3><br><br>
+<form class="form-inline">
+  
+    <div class="col-sm-12">
+    <h4><strong>Numero de identificacion:</strong> 1010012831</h4>
+  </div>
+  
+  
+  <div class="col-sm-12">
+     <h4><strong>Primer Nombre:</strong> Jhoan</h4>
+  </div>
+  </div>
+
+  
+  <div class="col-sm-12">
+   <h4><strong>Segundo Nombre:</strong> Santiago</h4>
+  </div>
+  
+  <div class="col-sm-12">
+  <h4><strong>Primer Apellido:</strong> Moreno</h4>
+  
+  </div>
+  
+  <div class="col-sm-12">
+  <h4><strong>Segundo Apellido:</strong> Castiblanco</h4>
+  
+    <div class="col-sm-12">
+   <h4><strong>Direccion:</strong> Tintal</h4>
+  
+  </div>
+
+  
+  <div class="col-sm-12">
+    <h4><strong>Correo Electronico:</strong> jsmoreno138@misena.edu.co</h4>
+  </div>
+  
+
+  
+  <div class="col-sm-12">
+   <h4><strong>Telefono:</strong> 7847042</h4>
+  </div>
+  
+  
+  <div class="col-sm-12">
+  <h4><strong>Telefono Celular:</strong> 3202201193</h4>
+  
+  </div><br><br>
+  </form>
+</center>
+
+</body>
+</html>

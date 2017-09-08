@@ -1,0 +1,21 @@
+    body{
+        background:blue url('imagenes/fondo.jpg') no-repeat center center;
+        background-size:100% 100%;
+        text-align: center;
+        font-size: 30px;
+        width: 100%;}
+
+    input{
+        width: 200px;
+        height: 30px;
+    }   
+
+    button{
+        width: 200px;
+        height: 30px;
+    } 
+
+
+
+
+    
